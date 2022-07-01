@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: 'learn-django'
+    command:
+      - "python3 manage.py runserver 0.0.0.0:8000"
+    network_mode: host
